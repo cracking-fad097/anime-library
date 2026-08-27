@@ -1,0 +1,15 @@
+.header {
+    background-position: center;
+    background-image: url('../../assets/images/headerBanner.jpg');
+    display: flex;
+    justify-content: center;
+    gap: 130px;
+    background-color: red;
+    height: 120px;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    height: 140px;
+}

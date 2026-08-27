@@ -1,0 +1,14 @@
+.list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.listItem {
+    font-size: 26px;
+}
+
+.text {
+    font-family: "NinjaNaruto";
+    color: white;
+}

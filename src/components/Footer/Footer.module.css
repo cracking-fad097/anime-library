@@ -1,0 +1,30 @@
+.footer {
+    background-position: bottom;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                        url('../../assets/images/headerBanner.jpg');
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    height: 150px;
+}
+
+.gitHubs {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.gitItem {
+    width: 90px;
+    height: 90px;
+}
+
+.banner {
+    width: 300px;
+}
+
+.bannerKatana {
+    width: 100%;
+    height: 200px;
+}
