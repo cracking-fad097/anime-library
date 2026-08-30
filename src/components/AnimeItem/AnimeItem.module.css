@@ -1,6 +1,6 @@
 .animeItem {
     width: calc(25% - 60px);
-    height: 500px;
+    height: 450px;
     display: flex;
     padding: 10px;
     box-shadow: 4px 4px 6px skyblue;

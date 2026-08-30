@@ -1,0 +1,14 @@
+[{
+    "id": 1,
+    "img": "../../src/assets/images/gigachad1.jpg",
+    "name": "Vsevolod",
+    "age": 16,
+    "github": "https://github.com/VsevolodMogutnenko"
+},
+{
+    "id": 1,
+    "img": "../../src/assets/images/egorka.jpg",
+    "name": "Egorka",
+    "age": 18,
+    "github": "https://github.com/cracking-fad097"
+}]
