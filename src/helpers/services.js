@@ -11,3 +11,9 @@ export const getById = async(id) => {
     const response = await axios.get(url)
     return response
 }
+
+export const getByName = async(name) => {
+    const url = `https://kitsu.io/api/edge/anime?filter[text]=${name}`
+    const response = await axios.get(url)
+    return response
+}

@@ -1,12 +1,39 @@
+.developersTitle {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.developersWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
 .developers {
-    width: 200px;
-    height: 500px;
-    border: 1px solid black;
-    border-radius: 10px;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .3);;
+    width: calc(25% - 60px);
+    font-size: 14px;
+    display: flex;
+    padding: 10px;
+    box-shadow: 4px 4px 6px skyblue;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.developersInfo {
+    margin: 20px 0 0 0;
+    padding: 0;
 }
 
 .developersImg {
-    width: 190px;
+    border-radius: 15px;
     height: 220px;
+}
+
+.developersLink {
+    margin-top: 20px;
+    color: black;
+}
+
+.developersLink:hover {
+    color: skyblue;
 }

@@ -10,8 +10,6 @@ export const Home = () => {
         getAnimes().then((data) => setAnimes(data))
     }, [])
 
-    console.log(animes?.data.data)
-
     return <div className={styles.home}>
         <AnimeList animes={animes?.data.data} />
     </div>
