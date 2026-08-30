@@ -1,0 +1,12 @@
+.animeList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 0;
+    margin: 60px 0 0 0;
+    justify-content: center;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

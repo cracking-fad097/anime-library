@@ -1,0 +1,28 @@
+.animeItem {
+    width: calc(25% - 60px);
+    height: 500px;
+    display: flex;
+    padding: 10px;
+    box-shadow: 4px 4px 6px skyblue;
+    flex-direction: column;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.animeItem:hover {
+    scale: 1.05;
+}
+
+.vote {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    flex-grow: 1;
+}
+
+.img {
+    height: 300px;
+}

@@ -4,9 +4,11 @@
                         url('../../assets/images/headerBanner.jpg');
     display: flex;
     justify-content: space-around;
+    overflow: hidden;
     align-items: center;
     color: white;
     height: 150px;
+    margin-top: 60px;
 }
 
 .gitHubs {
