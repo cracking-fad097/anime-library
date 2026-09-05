@@ -5,23 +5,23 @@ import { getByName } from "../../helpers/services";
 import { useSearchParams } from "react-router-dom";
 
 export const SearchBar = () => {
-    //const [name, setName] = useState('')
+    const [name, setName] = useState('')
     const [anime, setAnime] = useState(null)
     const [searchParams, setSearchParams] = useSearchParams()
 
     const handleInputChange = (event) => {
         const {value} = event.target
-        //setName(value)
-        setSearchParams({name:value})
+        setName(value)
     }
-
+    
     const handleSearchSubmit = (event) => {
         event.preventDefault()
-        getByName(name).then((data) => setAnime(data))
+        setSearchParams({name})
+        // getByName(name).then((data) => setAnime(data))
     }
 
     return <form className={styles.wrapper} onSubmit={handleSearchSubmit}>
-        <input type="text" className={styles.input} onChange={handleInputChange}/>
+        <input type="text" value={name} className={styles.input} onChange={handleInputChange}/>
         <button type="submit" className={styles.searchIconWrapper}><FaSearch className={styles.searchIcon}/></button>
     </form>
 }
