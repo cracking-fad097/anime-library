@@ -2,14 +2,17 @@ import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import styles from './SearchBar.module.css'
 import { getByName } from "../../helpers/services";
+import { useSearchParams } from "react-router-dom";
 
 export const SearchBar = () => {
-    const [name, setName] = useState('')
+    //const [name, setName] = useState('')
     const [anime, setAnime] = useState(null)
+    const [searchParams, setSearchParams] = useSearchParams()
 
     const handleInputChange = (event) => {
         const {value} = event.target
-        setName(value)
+        //setName(value)
+        setSearchParams({name:value})
     }
 
     const handleSearchSubmit = (event) => {
@@ -17,10 +20,10 @@ export const SearchBar = () => {
         getByName(name).then((data) => setAnime(data))
     }
 
-    return <div className={styles.wrapper}>
+    return <form className={styles.wrapper} onSubmit={handleSearchSubmit}>
         <input type="text" className={styles.input} onChange={handleInputChange}/>
-        <button className={styles.searchIconWrapper} onClick={handleSearchSubmit}><FaSearch className={styles.searchIcon}/></button>
-    </div>
+        <button type="submit" className={styles.searchIconWrapper}><FaSearch className={styles.searchIcon}/></button>
+    </form>
 }
 
 /* TODO:
