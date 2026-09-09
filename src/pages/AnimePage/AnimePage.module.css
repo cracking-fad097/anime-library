@@ -1,0 +1,14 @@
+.animeInfo {
+    padding: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
+.animeWrapper {
+    text-align: center;
+    text-shadow: 4px 4px black;
+    margin-bottom: 40px;
+}

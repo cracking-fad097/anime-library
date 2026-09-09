@@ -9,21 +9,27 @@ export const AnimePage = () => {
     useEffect (() => {
         getById(id).then((data) => {setAnime(data)})
     }, [])
-    console.log(anime)
     const path = anime?.data.data.attributes
 
-    return <><div className={styles.animeInfo}>
-            <div className={styles.imgWrapper}>
-                <img src={path?.posterImage.medium} alt="" />
-            </div>
-            <div className={styles.infoWrapper}>
-                <h1 className={styles.animeName}>{path?.canonicalTitle}</h1>
+    return <div className={styles.animeInfo} style={{
+        backgroundImage: `
+            linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+            url(${path?.coverImage.small})`}}>
+            <div className={styles.animeWrapper}>
+                <h1 className={styles.animeName}>🔥 {path?.canonicalTitle} 🔥</h1>
                 <p>Age Rating: {path?.ageRatingGuide}</p>
                 <p>Anime Rating: {path?.averageRating}</p>
                 <p>Was Releasing: {path?.startDate} - {path?.endDate}</p>
                 <p>Episode Count: {path?.episodeCount}</p>
                 <p>Average Episode Length: {path?.episodeLength} min</p>
-                <p>{path?.description}</p>
             </div>
-        </div></>
+            <p>{path?.description}</p>
+        </div>
 }
+
+/*
+
+TODO:
+    - coverImage.small ternarnik
+
+*/
