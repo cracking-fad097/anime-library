@@ -14,7 +14,8 @@
 }
 
 .developers {
-    width: calc(25% - 60px);
+    width: 400px;
+    height: 500px;
     font-size: 14px;
     display: flex;
     padding: 10px;
@@ -30,7 +31,7 @@
 
 .developersImg {
     border-radius: 15px;
-    height: 220px;
+    height: 400px;
 }
 
 .developersLink {

@@ -1,5 +1,6 @@
 .animeItem {
-    width: calc(20% - 60px);
+    /* width: calc(20% - 60px); */
+    width: 250px;
     box-shadow: 4px 4px 6px skyblue;
     border-radius: 15px;
     cursor: pointer;
