@@ -31,10 +31,3 @@ export const AnimePage = () => {
             <p>{path?.description}</p>
         </div>
 }
-
-/*
-
-TODO:
-
-
-*/
