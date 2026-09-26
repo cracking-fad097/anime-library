@@ -7,6 +7,7 @@ export const AnimeItem = ({id, title, vote, poster}) => {
             <img src={poster} alt=".." className={styles.img} />
             <h2 className={styles.title}>{title}</h2>
             <p className={styles.vote}>{vote}</p>
+            <button>⛩️ Add to watchlist 😍</button>
         </NavLink>
     </li>
 }
